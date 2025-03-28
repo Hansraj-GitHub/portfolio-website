@@ -1,0 +1,21 @@
+.projects {
+    height: 100vh;
+    padding-top: 90px;
+    text-align: center;
+    background: #121212;
+    color: white;
+  }
+  
+  .project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+  }
+  

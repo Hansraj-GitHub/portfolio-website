@@ -1,0 +1,215 @@
+
+.about {
+    height: 100vh;
+    padding-top: 90px;
+    background: #121212;
+    color: white;
+    text-align: center;
+  }
+  
+  .about-heading{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .about-heading1{
+    color: #fafafa;
+    
+  }
+
+  .about-heading2 p{
+    color: #a6a6a6;
+    padding-right: 100px;
+  }
+  .about-heading2 p i{
+    color: #fafafa;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+  }
+  
+  .left-side {
+    display: grid;
+    grid-template-rows: repeat(4, auto); /* Four rows */
+    gap: 20px;
+  }
+  
+  .section {
+    background: #121212;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .section1 {
+    height: auto; /* Allow height to adjust based on content */
+    width: 80%;
+    margin-left: 50px;
+    background-color: #f5f5f5;
+    color: #3d3d3d;
+    border-radius: 25px;
+    padding: 15px; /* Adds padding for better spacing */
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: flex-start; /* Aligns all content to the left */
+}
+
+.p1 {
+    font-size: 22px;
+    font-weight: 100; /* Make it slightly bold */
+    margin-bottom: 5px; /* Reduce gap below the title */
+}
+
+.section1 p {
+    font-weight: 100;
+    margin: 5px 0; /* Reduces gap between paragraphs */
+    letter-spacing: 1px;
+}
+
+  .section2{
+    height: 100px;
+    width: 80%;
+    margin-left: 50px;
+    color: #a6a6a6;
+    border: 1px white;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+  }
+
+  .section21 {
+    width: 80%;
+    background-color: #121212;
+    border: 1px solid #3d3d3d;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    padding: 15px; /* Adds spacing inside the div */
+}
+
+.section21 p {
+    margin: 3px 0; /* Reduces gap between paragraphs */
+    letter-spacing: 1px;
+    text-align: left; /* Ensures text starts from the left */
+}
+
+/* First paragraph (title) */
+.section21-p1 {
+  font-size: 20px;
+  font-weight: 100; /* Make it slightly bold */
+  
+}
+
+/* Second and third paragraph */
+.section21 p:nth-of-type(2),
+.section21 p:nth-of-type(3) {
+    font-size: 14px; /* Makes last two paragraphs smaller */
+    font-weight: 100;
+}
+
+  .section22 {
+    width: 80%;
+    background-color: #121212;
+    border-radius: 25px 25px 25px 25px;
+    
+  }
+
+  
+  .section3 {
+    width: 80%;
+    margin-left: 50px;
+    background-color: #121212;
+    border: 1px solid #3d3d3d;
+    color: #a6a6a6;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text to the left */
+    overflow: hidden; 
+}
+
+.section3-p1 {
+    font-size: 22px; /* Slightly reduced size so it fits inside */
+    font-weight: 100;
+    margin-bottom: 8px; 
+    padding-left: 15px;/* Adds spacing below the first paragraph */
+    letter-spacing: 1px;
+}
+
+.section3 p:not(.section3-p1) {
+    font-size: 14px; /* Smaller font size for the last two paragraphs */
+    font-weight: normal;
+    margin: 6px 0; /* Ensures equal spacing between 2nd and 3rd paragraph */
+    word-wrap: break-word; /* Breaks text to prevent overflow */
+    padding-left: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+
+
+  .section4{
+    height: 100px;
+    width: 80%;
+    margin-left: 50px;
+    color: #a6a6a6;
+    border: 1px white;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+  }
+
+  .section41{
+    width: 80%;
+    background-color: #121212;
+    border-radius: 25px 25px 25px 25px;
+  }
+
+.section41 i {
+  color: #f5f5f5;
+}
+
+  .section42{
+    width: 80%;
+    background-color: #121212;
+    border: 1px solid #3d3d3d;
+    border-radius: 25px;
+  }
+
+.section42 i {
+  color: #f5f5f5;
+}
+
+.right-side {
+  width: 50%; /* Adjust width as needed */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding-left: 200px; /* Add some spacing */
+}
+
+.profile-img {
+  width: 100%; /* Make the image responsive */
+  max-width: 600px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 170px; /* Optional: Rounded corners */
+  object-fit: cover; /* Ensure the image fits well */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin-bottom: 100px;
+}
+
+  
+
+  
+  

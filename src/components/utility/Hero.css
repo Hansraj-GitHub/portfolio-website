@@ -1,0 +1,316 @@
+/* Wrapper for hero sections */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  background: #121212;
+  color: white;
+  padding-top: 120px;
+  flex-direction: column;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Stacking items */
+}
+
+
+/* Hero-1 Section */
+.hero-1 {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-11 {
+  flex: 6; /* Takes up 70% of the space */
+  display: flex;
+  align-items: center;
+  font-family:Fira Code, sans-serif;
+  
+}
+
+.hero-11 p {
+  margin-left: 49px;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-align: center; /* Center the text */
+  
+}
+
+.project-link {
+  flex: 4; /* Takes up 30% of the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.project-link-1 {
+  font-size: 22px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none; /* Hides the border */
+  outline: none;
+  flex: 0.6;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  margin-right: 20px;
+
+}
+.project-link-2 {
+  padding-right: 30px;
+  padding-top: 9px;
+  font-size: 10px;
+  width: 45px; /* Ensures equal width and height */
+  height: 45px; /* Ensures a perfect circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%; /* Makes it a circle */
+  border: none; /* Hides the border */
+  outline: none;
+  background-color: #F5F5F5; /* Example background color */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.project-link-1:hover {
+  transform: scale(1.1); /* Makes the button 20% bigger */
+}
+
+
+
+.project-link-2:hover {
+  transform: scale(1.1); /* Makes the circle button 20% bigger */
+}
+
+.project-link-2 a {
+  margin-left: 25px;
+  font-size: 30px; /* Adjust the icon size */
+  color: #121212;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .hero-1 {
+    flex-direction: column; /* Stack sections vertically */
+    height: auto; /* Allow height to adjust */
+    justify-content: center; /* Center align items */
+    align-items: center;
+    gap: 20px; /* Add spacing between sections */
+  }
+
+.hero-11 p {
+    font-size: 60px; /* Reduce font size for smaller screens */
+    margin-left: 0; /* Center text */
+    text-align: center;
+  }
+
+  .project-link {
+    flex-direction: row; /* Ensure buttons stay horizontal */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .project-link-1, .project-link-2 {
+    font-size: 18px; /* Adjust button size */
+    /* padding: 8px 10px; */
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .hero-1 {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-11 p {
+    font-size: 40px; /* Further reduce font size */
+    letter-spacing: 5px; /* Adjust spacing between letters */
+    text-align: center;
+    margin-left: 0;
+  }
+  
+}
+/* Hero-2 Section */
+.hero-2 {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.my-goal {
+  flex: 4; /* Takes up 30% of the space */
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  
+}
+
+.my-goal p {
+  line-height: 0.4;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #A6A6A6;
+  
+  
+}
+.my-goal i {
+  color: #F5F5F5;
+}
+
+.hero-22 {
+  flex: 6; /* Takes up 70% of the space */
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  font-family: fira code,sans-serif;
+}
+
+
+.hero-22 p {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  flex:1;
+  
+  
+}
+/* Responsive styles for tablets */
+
+@media (max-width: 1024px) {
+  .hero-2 {
+    flex-direction: column; /* Stack sections vertically */
+    height: auto; /* Allow height to adjust */
+    justify-content: center; /* Center align items */
+    align-items: center;
+    gap: 20px; /* Add spacing between sections */
+  }
+
+  .hero-22 p {
+    font-size: 60px; /* Reduce font size for smaller screens */
+    margin-left: 0; /* Center text */
+    text-align: center;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .hero-2 {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-22 p {
+    font-size: 40px; /* Further reduce font size */
+    letter-spacing: 5px; /* Adjust spacing between letters */
+    text-align: center;
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column; /* Stack all sections vertically */
+    align-items: center; /* Center-align for better visuals */
+  }
+
+  .hero-11 {
+    order: 1; /* First in the new order */
+  }
+
+  .hero-22 {
+    order: 2; /* Second */
+    margin: 20px 0; /* Add spacing between sections */
+  }
+
+  .my-goal {
+    order: 3; /* Third */
+    margin: 20px 0;
+  }
+
+  .project-link {
+    order: 4 !important;
+    margin-top: 15px;
+  }
+}
+/* Social Icons */
+/* Desktop Default Styles (unchanged) */
+.social-icons {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  gap: 75px; /* Space between each social item */
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center; /* Aligns icon and text in a row */
+  font-size: 30px; /* Icon size */
+  color: white;
+  text-decoration: none; /* Removes link underline */
+  transition: color 0.3s, border 0.3s;
+  gap: 10px; /* Space between icon and text */
+  padding: 10px 15px; /* Padding for space inside border */
+  border: 1px solid #A6A6A6; /* Adds border */
+  border-radius: 25px; /* Rounded corners */
+}
+
+.social-icons a:hover {
+  color: #00bcd4; /* Change color on hover */
+  border-color: #00bcd4; /* Change border color on hover */
+}
+
+.social-icons p {
+  font-size: 16px; /* Adjust text size */
+  margin: 0; /* Remove default paragraph margin */
+  color: #A6A6A6;
+  font-style: italic;
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .social-icons {
+    flex-direction: row; /* Keep items in a row */
+    gap: 30px; /* Reduce spacing between items */
+  }
+
+  .social-icons a {
+    font-size: 24px; /* Slightly smaller icon size */
+    padding: 8px 12px; /* Adjust padding */
+    gap: 8px; /* Adjust gap between icon and text */
+  }
+
+  .social-icons p {
+    font-size: 14px; /* Smaller text size */
+  }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .social-icons {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between each item */
+  }
+
+  .social-icons a {
+    font-size: 20px; /* Smaller icon size */
+    padding: 6px 10px; /* Reduce padding */
+    gap: 6px; /* Adjust gap between icon and text */
+    justify-content: center; /* Center-align icons and text */
+  }
+
+  .social-icons p {
+    font-size: 12px; /* Smaller text size */
+  }
+}
