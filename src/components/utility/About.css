@@ -192,24 +192,78 @@
 }
 
 .right-side {
-  width: 50%; /* Adjust width as needed */
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  padding-left: 200px; /* Add some spacing */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically * /* Add some spacing */
 }
 
 .profile-img {
   width: 100%; /* Make the image responsive */
-  max-width: 600px; /* Set a maximum width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 170px; /* Optional: Rounded corners */
-  object-fit: cover; /* Ensure the image fits well */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-  margin-bottom: 100px;
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
-  
+/* Tablet View (768px to 1024px) */
 
+@media (max-width: 1024px) {
+  .container {
+      grid-template-columns: 1fr; /* Single column layout for tablets */
+  }
+
+  .left-side {
+      order: 2; /* Place left-side content after the image */
+  }
+
+  .right-side {
+      order: 1; /* Place the image before the left-side content */
+      margin-bottom: 20px;
+  }
+
+  .about-heading2 p {
+      padding: 0 20px;
+      text-align: center;
+  }
+} 
+
+/* Mobile View (Up to 768px) */
+@media (max-width: 768px) {
+  .about {
+      height: auto;
+      padding: 20px;
+  }
+
+  .container {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+
+  .left-side {
+      order: 2;
+      gap: 10px;
+  }
+
+  .right-side {
+      order: 1;
+      margin-bottom: 20px;
+  }
+
+  .profile-img {
+      max-width: 200px; /* Smaller image for mobile */
+  }
+
+  .section {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .about-heading1 h3 {
+      font-size: 18px; /* Smaller heading for mobile */
+  }
+
+  .about-heading2 p {
+      font-size: 14px;
+  }
+}
   
   

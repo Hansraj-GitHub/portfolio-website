@@ -27,9 +27,9 @@ function About() {
             <p>Material UI / MediaQueries / Flex</p>
           </div>
           <div className="section22">
-              <div className="github-logo"><a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              {/* <div className="github-logo"><a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
                        <FaGithub /></a></div>
-              <div className="github-overlay"></div>
+              <div className="github-overlay"></div> */}
           </div>
         </div>
         <div className="section3">
