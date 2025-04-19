@@ -1,6 +1,5 @@
 import "../components/utility/About.css";
 import coverImg from "../components/utility/photo.jpeg"
-import { FaGithub } from "react-icons/fa";
 
 
 
@@ -52,7 +51,9 @@ function About() {
         <img src={coverImg} alt="Profile" className="profile-img"/>
         </div>
       </div>
-
+      <div className="arrow-box">
+        <span className="arrow">&#8595;</span>
+      </div> 
     </section>
   );
 }

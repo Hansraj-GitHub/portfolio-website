@@ -266,4 +266,41 @@
   }
 }
   
-  
+.arrow-box {
+  display: none; /* hidden by default */
+}
+
+/* Show only on screens wider than 768px */
+@media (min-width: 768px) {
+  .arrow-box {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    animation: float 2s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-box:hover {
+    transform: scale(1.1);
+  }
+
+  .arrow {
+    font-size: 28px;
+    color: black;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+}

@@ -1,11 +1,9 @@
 import "../components/utility/Hero.css";
 import { FaGithub, FaLinkedin, FaTelegram, FaInstagram, FaFacebook } from "react-icons/fa";
-import { FaArrowLeft, FaArrowRight, FaArrowUp, FaArrowDown } from "react-icons/fa";
+import {  FaArrowRight } from "react-icons/fa";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 
 function Hero() {
   return (
@@ -13,8 +11,8 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-1">
             <div className="hero-11"><p>Full-Stack </p></div>
-            <div className="project-link"><button className="project-link-1"><i>Projects</i></button>
-            <button className="project-link-2"><a href="https://example.com" target="_blank" rel="noopener noreferrer"><FaArrowRight />
+            <div className="project-link"><button className="project-link-1" ><a href="#projects"><i>Projects</i></a></button>
+            <button className="project-link-2"><a href="#projects"><FaArrowRight />
             </a></button>
             </div>
         </div>
@@ -46,6 +44,10 @@ function Hero() {
         <FaFacebook /><p>facebook</p>
         </a>
     </div>
+    <div className="arrow-box">
+  <span className="arrow">&#8595;</span>
+</div>
+
 
       </div>
     </section>
