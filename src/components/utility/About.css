@@ -230,6 +230,7 @@
 /* Mobile View (Up to 768px) */
 @media (max-width: 768px) {
   .about {
+    
       height: auto;
       padding: 20px;
   }
