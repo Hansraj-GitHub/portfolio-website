@@ -236,11 +236,15 @@
 
   .container {
       grid-template-columns: 1fr; /* Single column layout for mobile */
+      
   }
 
   .left-side {
       order: 2;
       gap: 10px;
+      margin-right: 40px;
+      /* padding-right: 50px; */
+      
   }
 
   .right-side {
@@ -256,6 +260,7 @@
       width: 100%;
       padding: 10px;
   }
+  
 
   .about-heading1 h3 {
       font-size: 18px; /* Smaller heading for mobile */
