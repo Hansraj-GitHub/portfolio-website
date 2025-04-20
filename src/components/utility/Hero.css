@@ -240,7 +240,8 @@
 
   .hero-22 {
     order: 2; /* Second */
-    margin: 20px 0; /* Add spacing between sections */
+    margin: 0px 40px; /* Add spacing between sections */
+    padding-top: 50px;
   }
 
   .my-goal {
@@ -431,4 +432,3 @@ body {
     }
   }
 }
-
