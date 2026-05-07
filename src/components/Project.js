@@ -1,19 +1,19 @@
 import "../components/utility/Project.css";
-import quizImg from "../assets/quiz.png";
+import quizImg from "../assets/ed.png";
 import loginSignupImg from "../assets/image.png";
 
 function Projects() {
   const projects = [
     {
-      title: "Quiz App",
-      desc: "HTML CSS JAVASCRIPT",
-      link: "https://github.com/Hansraj-GitHub/Quiz-App",
+      title: "EdTech Platform",
+      desc: "React , Node.js , Express.js , MongoDB",
+      link: "https://talentmathzone-i6m7v24.public.builtwithrocket.new/",
       images: [quizImg] // always use 'images' (array), even if one
     },
     {
       title: "MERN AUTHENTICATION",
       desc: "React , Node.js , Express.js , MongoDB",
-      link: "https://github.com/Hansraj-GitHub/mern-authentication/tree/main",
+      link: "https://mern-authentication-ds4e.vercel.app/login",
       images: [loginSignupImg]
     },
     
@@ -43,7 +43,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View on GitHub
+              Live Demo
             </a>
           </div>
         ))}
